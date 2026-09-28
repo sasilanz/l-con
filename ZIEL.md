@@ -103,7 +103,7 @@ Die Seite und die Mail sollen nie gleichzeitig ausfallen. Alle Schritte lassen s
 
 | | Vorher | Nachher |
 |---|---|---|
-| Hosting `mobosupe` | *Betrag offen* | 0 |
+| Hosting `mobosupe` | ca. CHF 250 / Jahr | 0 |
 | Domains (Hostpoint) | unverändert | unverändert |
 | Proton Unlimited | schon vorhanden | schon vorhanden |
 | GitHub Pages | – | 0 |
@@ -136,5 +136,5 @@ Die Seite und die Mail sollen nie gleichzeitig ausfallen. Alle Schritte lassen s
 - [ ] Nach dem 5.10.: prüfen, ob der automatisch angelegte Wildcard-MX `*.l-con.ch → mail.protonmail.ch` verschwunden ist, sonst löschen
 - [x] HTTPS für l-con.ch erzwungen (Let's Encrypt, wird automatisch verlängert). Für `www` stellt GitHub das Zertifikat aus, sobald der CNAME steht.
 - [ ] DKIM: In Proton prüfen, ob der Reiter grün ist, und eine Test-Mail auf `dkim=pass` prüfen
-- [ ] Monatliche bzw. jährliche Kosten von `mobosupe` für den Vergleich
+- [x] Kosten `mobosupe`: ca. CHF 250 / Jahr, fallen ab 5.10.2026 weg
 - [x] Vorlage für das Design: `sasilanz/dieti-it-support`
