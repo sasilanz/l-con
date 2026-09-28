@@ -125,5 +125,6 @@ Die Seite und die Mail sollen nie gleichzeitig ausfallen. Alle Schritte lassen s
 - [x] Downloads, Bankdaten und alte Service-Liste fallen weg
 - [ ] Hostpoint-Support fragen: Welcher „Domain state“ lässt die eigenen DNS-Einträge unverändert, ohne Hosting und Mail? Bleibt die DNS-Verwaltung nach der Kündigung von `mobosupe` möglich? (Betrifft astridkreativ.ch und l-con.ch. dieti-it.ch ist kein Vorbild, dort liegt DNS bei Cloudflare.) Ausweichweg: DNS zu Cloudflare verschieben.
 - [ ] astridkreativ.ch im Hostpoint-Panel von `mobosupe` lösen (nur DNS behalten), erst nach der Antwort von Hostpoint
+- [ ] Nach dem Lösen von `mobosupe` prüfen, ob der automatisch angelegte Wildcard-MX `*.l-con.ch → mail.protonmail.ch` verschwunden ist, sonst löschen
 - [ ] Monatliche bzw. jährliche Kosten von `mobosupe` für den Vergleich
 - [x] Vorlage für das Design: `sasilanz/dieti-it-support`
