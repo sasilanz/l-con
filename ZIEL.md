@@ -1,6 +1,6 @@
 # l-con.ch – Zieldokument
 
-*Stand: 2026-09-28 · Status: Seite live auf l-con.ch (GitHub Pages), Mail über Proton. Offen: `www`, HTTPS, Aufräumen nach Ablauf von `mobosupe` am 5.10.2026.*
+*Stand: 2026-09-28 · Status: Seite live auf l-con.ch (GitHub Pages), Mail über Proton. Offen: `www`, Aufräumen nach Ablauf von `mobosupe` am 5.10.2026.*
 
 ## 1. Ziel
 
@@ -124,11 +124,12 @@ Die Seite und die Mail sollen nie gleichzeitig ausfallen. Alle Schritte lassen s
 - [x] Kurztext Deutsch und Englisch (Variante 2)
 - [x] Downloads, Bankdaten und alte Service-Liste fallen weg
 - [x] Entscheidung: DNS bleibt bei Hostpoint (kein Cloudflare). Domain state wird **nicht** manuell umgestellt (Redirect/Parking würden vermutlich eigene A-Einträge setzen, Disable löscht die Zone).
-- [ ] `mobosupe` kündigen (läuft am **5.10.2026** aus, sofort löschen geht nicht)
+- [x] `mobosupe` gekündigt (läuft am **5.10.2026** aus)
+- [ ] Antwort vom Hostpoint-Support abwarten (Anfrage vom 28.9.2026: Domain state, DNS nach Ablauf, www-CNAME). „Parking“ wird bei eigenen A-Einträgen abgelehnt („Conflicting IP addresses found“).
 - [ ] Nach dem 5.10.: Zonen von l-con.ch und astridkreativ.ch mit den Sicherungen vergleichen (`~/dev/l-con.ch.txt`, `~/dev/astridkreativ.ch.txt`, Stand 28.9.2026)
 - [ ] Nach dem 5.10.: `www.l-con.ch` als CNAME → `sasilanz.github.io` anlegen. Bis dahin blockiert Hostpoint das, obwohl der Website-Alias gelöscht ist.
 - [ ] Nach dem 5.10.: prüfen, ob der automatisch angelegte Wildcard-MX `*.l-con.ch → mail.protonmail.ch` verschwunden ist, sonst löschen
-- [ ] HTTPS in GitHub Pages erzwingen, sobald das Zertifikat da ist (am besten, wenn auch `www` eingetragen ist)
+- [x] HTTPS für l-con.ch erzwungen (Let's Encrypt, wird automatisch verlängert). Für `www` stellt GitHub das Zertifikat aus, sobald der CNAME steht.
 - [ ] DKIM: In Proton prüfen, ob der Reiter grün ist, und eine Test-Mail auf `dkim=pass` prüfen
 - [ ] Monatliche bzw. jährliche Kosten von `mobosupe` für den Vergleich
 - [x] Vorlage für das Design: `sasilanz/dieti-it-support`
