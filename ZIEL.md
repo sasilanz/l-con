@@ -1,6 +1,6 @@
 # l-con.ch – Zieldokument
 
-*Stand: 2026-09-28 · Status: Planung (noch kein Code)*
+*Stand: 2026-09-28 · Status: Seite live auf l-con.ch (GitHub Pages), Mail über Proton. Offen: `www`, HTTPS, Aufräumen nach Ablauf von `mobosupe` am 5.10.2026.*
 
 ## 1. Ziel
 
@@ -123,8 +123,12 @@ Die Seite und die Mail sollen nie gleichzeitig ausfallen. Alle Schritte lassen s
 - [x] Impressum-Werte eintragen (von der alten Seite: Krokusstrasse 8, 8953 Dietikon, CHE-472.791.905). Auf uid.admin.ch gegenprüfen.
 - [x] Kurztext Deutsch und Englisch (Variante 2)
 - [x] Downloads, Bankdaten und alte Service-Liste fallen weg
-- [ ] Hostpoint-Support fragen: Welcher „Domain state“ lässt die eigenen DNS-Einträge unverändert, ohne Hosting und Mail? Bleibt die DNS-Verwaltung nach der Kündigung von `mobosupe` möglich? (Betrifft astridkreativ.ch und l-con.ch. dieti-it.ch ist kein Vorbild, dort liegt DNS bei Cloudflare.) Ausweichweg: DNS zu Cloudflare verschieben.
-- [ ] astridkreativ.ch im Hostpoint-Panel von `mobosupe` lösen (nur DNS behalten), erst nach der Antwort von Hostpoint
-- [ ] Nach dem Lösen von `mobosupe` prüfen, ob der automatisch angelegte Wildcard-MX `*.l-con.ch → mail.protonmail.ch` verschwunden ist, sonst löschen
+- [x] Entscheidung: DNS bleibt bei Hostpoint (kein Cloudflare). Domain state wird **nicht** manuell umgestellt (Redirect/Parking würden vermutlich eigene A-Einträge setzen, Disable löscht die Zone).
+- [ ] `mobosupe` kündigen (läuft am **5.10.2026** aus, sofort löschen geht nicht)
+- [ ] Nach dem 5.10.: Zonen von l-con.ch und astridkreativ.ch mit den Sicherungen vergleichen (`~/dev/l-con.ch.txt`, `~/dev/astridkreativ.ch.txt`, Stand 28.9.2026)
+- [ ] Nach dem 5.10.: `www.l-con.ch` als CNAME → `sasilanz.github.io` anlegen. Bis dahin blockiert Hostpoint das, obwohl der Website-Alias gelöscht ist.
+- [ ] Nach dem 5.10.: prüfen, ob der automatisch angelegte Wildcard-MX `*.l-con.ch → mail.protonmail.ch` verschwunden ist, sonst löschen
+- [ ] HTTPS in GitHub Pages erzwingen, sobald das Zertifikat da ist (am besten, wenn auch `www` eingetragen ist)
+- [ ] DKIM: In Proton prüfen, ob der Reiter grün ist, und eine Test-Mail auf `dkim=pass` prüfen
 - [ ] Monatliche bzw. jährliche Kosten von `mobosupe` für den Vergleich
 - [x] Vorlage für das Design: `sasilanz/dieti-it-support`
