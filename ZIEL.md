@@ -127,7 +127,12 @@ Die Seite und die Mail sollen nie gleichzeitig ausfallen. Alle Schritte lassen s
 - [x] `mobosupe` gekündigt (läuft am **5.10.2026** aus)
 - [ ] Antwort vom Hostpoint-Support abwarten (Anfrage vom 28.9.2026: Domain state, DNS nach Ablauf, www-CNAME). „Parking“ wird bei eigenen A-Einträgen abgelehnt („Conflicting IP addresses found“).
 - [ ] Nach dem 5.10.: Zonen von l-con.ch und astridkreativ.ch mit den Sicherungen vergleichen (`~/dev/l-con.ch.txt`, `~/dev/astridkreativ.ch.txt`, Stand 28.9.2026)
-- [ ] Nach dem 5.10.: `www.l-con.ch` als CNAME → `sasilanz.github.io` anlegen. Bis dahin blockiert Hostpoint das, obwohl der Website-Alias gelöscht ist.
+- [x] `www.l-con.ch` als CNAME → `sasilanz.github.io` angelegt (28.9.2026). Hostpoint hat das blockiert, bis alles aus `mobosupe` entfernt war:
+  1. Website-Alias `www.l-con.ch` gelöscht
+  2. Die alte „Sites“-Webseite auf `mobosupe.myhostpoint.ch` umgehängt und dann gelöscht
+  3. Die Mail-Konten `info@` und `astrid@` bei Hostpoint gelöscht
+  4. Die separat angelegte Subdomain `www.l-con.ch` gelöscht, das war der eigentliche Blocker
+  Danach liess sich der CNAME anlegen. Um das Zertifikat für `www` auszulösen, wurde die Custom Domain in GitHub einmal entfernt und neu gesetzt.
 - [ ] Nach dem 5.10.: prüfen, ob der automatisch angelegte Wildcard-MX `*.l-con.ch → mail.protonmail.ch` verschwunden ist, sonst löschen
 - [x] HTTPS für l-con.ch erzwungen (Let's Encrypt, wird automatisch verlängert). Für `www` stellt GitHub das Zertifikat aus, sobald der CNAME steht.
 - [ ] DKIM: In Proton prüfen, ob der Reiter grün ist, und eine Test-Mail auf `dkim=pass` prüfen
