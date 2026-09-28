@@ -120,9 +120,10 @@ Die Seite und die Mail sollen nie gleichzeitig ausfallen. Alle Schritte lassen s
 ## 9. Offene Punkte
 
 - [x] Impressum-Umfang: Firmenname (l-con GmbH), Adresse, UID
-- [ ] Impressum-Werte eintragen (Adresse, UID)
-- [ ] Kurztext Deutsch und Englisch: zuerst ein Platzhalter, später gemeinsam formulieren
+- [x] Impressum-Werte eintragen (von der alten Seite: Krokusstrasse 8, 8953 Dietikon, CHE-472.791.905). Auf uid.admin.ch gegenprüfen.
+- [ ] Kurztext Deutsch und Englisch: Platzhalter ist drin, später gemeinsam formulieren
 - [x] Downloads, Bankdaten und alte Service-Liste fallen weg
-- [ ] astridkreativ.ch im Hostpoint-Panel von `mobosupe` lösen (nur DNS behalten)
+- [ ] Hostpoint-Support fragen: Welcher „Domain state“ lässt die eigenen DNS-Einträge unverändert, ohne Hosting und Mail? Bleibt die DNS-Verwaltung nach der Kündigung von `mobosupe` möglich? (Betrifft astridkreativ.ch und l-con.ch. dieti-it.ch ist kein Vorbild, dort liegt DNS bei Cloudflare.) Ausweichweg: DNS zu Cloudflare verschieben.
+- [ ] astridkreativ.ch im Hostpoint-Panel von `mobosupe` lösen (nur DNS behalten), erst nach der Antwort von Hostpoint
 - [ ] Monatliche bzw. jährliche Kosten von `mobosupe` für den Vergleich
 - [x] Vorlage für das Design: `sasilanz/dieti-it-support`
